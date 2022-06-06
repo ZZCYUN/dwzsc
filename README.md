@@ -18,7 +18,7 @@
 
 伪静态配置(nginx 别问我为什么只有nginx因为我只用过nginx)
 
-
+```
 location /t/ {
 	if (!-e $request_filename){
 		rewrite  ^(.*)$  /t/index.php?$1  last;   break;
@@ -29,7 +29,7 @@ location / {
 		rewrite  ^(.*)$  /index.php?$1  last;   break;
 	}
 }
-
+```
 
 服务器就配置好了，访问你的域名，即可进入生成链接页面
 
