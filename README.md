@@ -16,7 +16,7 @@
 
 然后再把api.php里面的:你的域名，替换成自己的域名
 
-伪静态配置(别问我为什么只有nginx)
+nginx伪静态配置(别问我为什么只有nginx)
 
 ```nginx
 location /t/ {
