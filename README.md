@@ -1,4 +1,4 @@
-#开始吧
+开始吧
 ---
 一个非常简单的短网址生成程序
 
@@ -6,7 +6,7 @@
 
 应用程序采用IAPP
 
-#食用教程
+食用教程
 ---
 把压缩包里的文件上传到服务器或主机
 
@@ -19,14 +19,22 @@
 伪静态配置(nginx 别问我为什么只有nginx因为我只用过nginx)
 
 location /t/ {
+
 	if (!-e $request_filename){
+
 		rewrite  ^(.*)$  /t/index.php?$1  last;   break;
+
 	}
+
 }
 location / {
+
 	if (!-e $request_filename){
+
 		rewrite  ^(.*)$  /index.php?$1  last;   break;
+
 	}
+
 }
 
 服务器就配置好了，访问你的域名，即可进入生成链接页面
@@ -45,7 +53,7 @@ location / {
 
 然后手动修改你的域名
 
-#重点，注意事项
+重点，注意事项
 ---
 重点:打包APP需要IAPP的白银会员
 
