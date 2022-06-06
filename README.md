@@ -20,23 +20,14 @@
 
 
 location /t/ {
-
 	if (!-e $request_filename){
-
 		rewrite  ^(.*)$  /t/index.php?$1  last;   break;
-
 	}
-
 }
-
 location / {
-
 	if (!-e $request_filename){
-
 		rewrite  ^(.*)$  /index.php?$1  last;   break;
-
 	}
-
 }
 
 
